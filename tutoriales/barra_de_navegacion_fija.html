@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Barra de Navegacion Fija</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/release/v5.5.0/css/all.css">
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+
+  <header>
+  	<nav >
+  		<ul>
+  			<a href="../index.html"><img class="imgnav" src="../img/VR1.jpg"></a>
+  			<a href="../index.html" class="logotext">
+  				<span>Toxon</span>
+  			</a>
+  			<li><a href="../index.html">Inicio</a></li>
+  			<li><a href="../cursos.html">Cursos</a></li>
+  			<li class="actual"><a href="../tutoriales.html">Tutoriales</a></li>
+  		</ul>
+  	</nav>
+  </header>
+
+</head>
+
+<body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.13.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+
+
+<section class="contenido">
+
+
+
+
+
+<section class="postcon">
+
+			<div class="imgposts">
+				<a href="../img/navfija.jpg"><img src="../img/navfija.jpg"></a>
+			</div>
+
+			<div class="txtxpost">
+				<h1 class="titlepost">Crea tu Barra de navegacion fija con HTML y CSS</h1>
+
+				<p class="ppost">Aprende a crear una barra de navegacon fija en la pantalla utilizando unicamente HTML y CSS</p>
+			</div>
+			
+			<div class="txtxpost">
+				<p class="ppost">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+			</div>
+
+			<div class="verdemo">
+
+				<a href="../demos/barra_navegacion_fija/demo.html" target="_blank"><button class="btn-demo">Demo</button></a>
+
+				<a href="https://www.youtube.com/channel/UCrJWBQavzWm74lPYeAtSKWA?view_as=subscriber" target="_blank"><button class="btn-you">YouTube</button></a>	
+
+				<a href="https://twitter.com/_Toxon_" target="_blank"><button class="btn-twitter">Twitter</button></a>
+
+			</div>
+	<section>
+		<h1 style="margin-top:20px;">Codigo HTML</h1>
+		<pre>
+		&lt;!DOCTYPE html&gt;
+		&lt;html&gt;
+		&lt;head&gt;
+			&lt;title&gt;Barra de Navegacion Fija&lt;/title&gt;
+			&lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
+
+		&lt;header&gt;
+			&lt;nav&gt;
+		  		&lt;ul&gt;
+		  			&lt;a href="index.html" class="logotext"&gt;
+		  			&lt;span&gt;Name&lt;/span&gt;
+		  			&lt;/a&gt;
+		  			&lt;li class="actual"&gt;&lt;a href=""&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+		  			&lt;li&gt;&lt;a href=""&gt;Link#1&lt;/a&gt;&lt;/li&gt;
+		  			&lt;li&gt;&lt;a href=""&gt;Link#2&lt;/a&gt;&lt;/li&gt;
+		  			&lt;li&gt;&lt;a href=""&gt;Link#3&lt;/a&gt;&lt;/li&gt;
+		  			&lt;li&gt;&lt;a href=""&gt;Link#4&lt;/a&gt;&lt;/li&gt;
+		  		&lt;/ul&gt;
+		  	&lt;/nav&gt;
+		&lt;/header&gt;
+		&lt;/head&gt;
+
+		&lt;body&gt;
+
+		&lt;/body&gt;
+		&lt;/html				
+				</pre>
+
+				<h1 style="margin-top:20px;">Codigo CSS</h1>
+				<pre>
+		/* Estilos para Todo el documento*/
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif; 
+			list-style: none;
+		}
+			
+		body{
+		  background: url(img/img.jpg);
+		}
+
+		/* Estilos para el contenedor de la barra*/
+		header {
+		  background: rgba(0,0,0,.9);
+		  width: 100%;
+		  position: fixed;
+		  z-index: 100;
+		  border-top: 3px solid #3671B9;
+		}
+
+		/* Estilos de la barra de navegacion */
+			
+		nav {
+		  float: left; 
+		  margin-left: 59px;
+		}
+		 
+		nav ul {
+		  list-style: none;
+		  overflow: hidden; 
+		}
+		 
+		nav ul li {
+		  float: left;
+		  font-family: Arial, sans-serif;
+		  font-size: 16px;
+		}
+		 
+		nav ul li a {
+		  display: block; 
+		  padding: 20px;
+		  color: white;
+		  text-decoration: none;
+		}
+
+		.logotext {
+		  float: left;
+		  text-decoration: none;
+		  color: white;
+		  font-size: 30px;
+		  padding: 10px 2.5em 15px 9px;
+		}
+
+		/* Estilos para hover para los li*/
+
+		nav ul li:hover {
+			background:#3671B9;
+		}
+
+		/* Estilos para la pestaña actual*/
+
+		.actual{
+		  background:#3671B9;
+		}
+
+
+				</pre>
+	</section>
+</section>
+
+		<aside class="latder">
+
+			<div class="divprom1">
+				<h4 class="txprom1">Redes Sociales</h4>
+				
+				<form class="formf1" action="https://www.youtube.com/channel/UCrJWBQavzWm74lPYeAtSKWA?view_as=subscriber" target="_blank">
+					<button class="btn-yout">
+					<i class="fab fa-youtube fa-2x"></i>
+					</button>
+				</form>
+
+				<form class="formf1" action="https://www.instagram.com/__Toxon__/" target="_blank">
+					<button class="btn-inst">
+						<i class="fab fa-instagram fa-2x"></i>
+					</button>
+				</form>
+
+				<form class="formf1" href="https://twitter.com/_Toxon_" target="_blank">
+					<button class="btn-twitt">
+						<i class="fab fa-twitter fa-2x"></i>
+					</button>
+				</form>
+
+			</div>
+
+			<div class="widget">
+				<h4 class="txten">Tendencias</h4>
+				<div class="contendencias">
+
+					<div class="tendencia">
+						<ul>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/navfija.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer un menu de navegacion fija en pantalla</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="widget">
+				<h4 class="txten">Anuncios</h4>
+				<div class="contendencias">
+
+					<div class="tendencia">
+						<ul>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/navfija.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer un menu de navegacion fija en pantalla</a>
+							</li>
+							
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+							<li>
+								<a href="">
+									<img width="280" height="146" class="wpp-img" src="../img/VR1.jpg">
+								</a>
+								<a class="tx-wpp" href=""> Como hacer una barra de navegacion fija en pantalla</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</aside>
+
+	</section>
+	<script src="js/app.js"></script>
+
+	
+</body>
+	
+	
+
+
+
+</html>

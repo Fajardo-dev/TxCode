@@ -1,0 +1,65 @@
+/* Estilos para Todo el documento*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif; 
+	list-style: none;
+}
+	
+body{
+  background: url(img/img.jpg);
+}
+
+/* Estilos para el contenedor de la barra*/
+header {
+  background: rgba(0,0,0,.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  border-top: 3px solid #3671B9;
+}
+
+/* Estilos de la barra de navegacion */
+	
+nav {
+  float: left; 
+  margin-left: 59px;
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; 
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.logotext {
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px 2.5em 15px 9px;
+}
+
+/* Estilos para hover para los li*/
+
+nav ul li:hover {
+	background:#3671B9;
+}
+
+/* Estilos para la pestaña actual*/
+
+.actual{
+  background:#3671B9;
+}

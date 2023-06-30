@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Inicio de Sesion</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+  <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB10We37s5IZ3EjxyL1pTDvrL33r6TSQyU",
+    authDomain: "toxongaming.firebaseapp.com",
+    databaseURL: "https://toxongaming.firebaseio.com",
+    projectId: "toxongaming",
+    storageBucket: "toxongaming.appspot.com",
+    messagingSenderId: "447385136724",
+    appId: "1:447385136724:web:968a669a4b23889610c7c1",
+    measurementId: "G-HGBVFPFMT3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  var storage = firebase.storage()
+
+  </script>
+
+
+</head>
+<body>
+
+  <script src="js/firebase.js"></script>
+  
+<div class="registerbar">
+
+
+  <aside class="asider">
+    <div class="con1">
+      <p class="marcas">Toxon</p>
+      <div class="textt1">
+        <h4 class="loglog">Bienvenido</h4>
+      </div>
+      
+
+      <div class="corr">
+        <input autocomplete="off" class="inputlog" id="email2" type="email" placeholder="Email">      
+      </div>
+
+      <div class="corr">
+        <input class="inputlogw" id="contrasena2" type="password" placeholder="Contraseña"> 
+      </div>
+
+      <div class="loginh">
+        <a class="mslogre" href="register.html">Registrate Gratis</a>
+      </div>
+
+      <button class="botlog" onclick="ingreso()">Siguiente</button>
+
+    </div>
+</aside>  
+
+  
+
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>
